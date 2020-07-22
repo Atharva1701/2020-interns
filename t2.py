@@ -24,7 +24,7 @@ def T2():
     if date <= d_2 and date >= d_1:
       inr.append(data['rates'][i]['INR'])
       gbp.append(data['rates'][i]['GBP'])
-      dates.append(date.day)
+      dates.append([date.day])
 
 
   plt.plot(dates,gbp)
